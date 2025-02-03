@@ -1,4 +1,18 @@
 
+# # Python-Snake
+# Just a for fun python project of a basic implementation of Snake in python 
+
+# This program runs within a python IDE like visual studios or Pycharm using a graphical gui that appears when you press run in a code complier to run the program.
+
+# To run:
+# 1. Open snake.py in your python ide of choice
+# 2. In terminal, run `pip install freegames` to install a required dependency
+# 3. The game should run inside a graphical gui from the Turtle Library.
+
+# Controls: Press the arrow keys (or WASD) to move the snake around the screen. 
+# The snake will grow as it eats the red food blocks. 
+# If the snake runs into the wall or itself, the game will restart.
+
 from turtle import *
 from random import randrange
 
@@ -69,9 +83,25 @@ hideturtle()
 tracer(False) # Draws the blocks bit by bit on True, slows down the game dramatically
 
 listen()
+
+# Arrow key controls 
 onkey(lambda: direction(10, 0), 'Right')
 onkey(lambda: direction(-10, 0), 'Left')
 onkey(lambda: direction(0, 10), 'Up')
 onkey(lambda: direction(0, -10), 'Down')
+
+#  W
+# ASD key controls 
+    # (lowercase)
+onkey(lambda: direction(10, 0), 'd')
+onkey(lambda: direction(-10, 0), 'a')
+onkey(lambda: direction(0, 10), 'w')
+onkey(lambda: direction(0, -10), 's')
+    #(UPPERCASE)
+onkey(lambda: direction(10, 0), 'D')
+onkey(lambda: direction(-10, 0), 'A')
+onkey(lambda: direction(0, 10), 'W')
+onkey(lambda: direction(0, -10), 'S')
+
 move()
 done()
