@@ -10,9 +10,8 @@ food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
 
-
-def change(x, y):
-    "Change snake direction."
+# Controls the direction of the snake
+def direction(x, y):
     aim.x = x
     aim.y = y
 
@@ -70,9 +69,9 @@ hideturtle()
 tracer(False) # Draws the blocks bit by bit on True, slows down the game dramatically
 
 listen()
-onkey(lambda: change(10, 0), 'Right')
-onkey(lambda: change(-10, 0), 'Left')
-onkey(lambda: change(0, 10), 'Up')
-onkey(lambda: change(0, -10), 'Down')
+onkey(lambda: direction(10, 0), 'Right')
+onkey(lambda: direction(-10, 0), 'Left')
+onkey(lambda: direction(0, 10), 'Up')
+onkey(lambda: direction(0, -10), 'Down')
 move()
 done()
