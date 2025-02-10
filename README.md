@@ -11,3 +11,5 @@ To run:
 Controls: Press the arrow keys (or WASD) to move the snake around the screen. 
 The snake will grow as it eats the red food blocks. 
 If the snake runs into the wall or itself, the game will restart.
+
+![Example](https://github.com/user-attachments/assets/bccee309-464f-4199-87b8-50978d6a3f90)
